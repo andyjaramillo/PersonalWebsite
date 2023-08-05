@@ -3,13 +3,32 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '@fontsource/roboto/300.css';
+import {BrowserRouter} from "react-router-dom";
+import {CssBaseline} from "@mui/material";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+// Create a custom theme
+const theme = createTheme({
+    palette: {
+        background: {
+            default: 'black', // Set your background color
+        },
+    },
+});
+
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <ThemeProvider theme={theme}>
+              <CssBaseline/>
+              <App />
+          </ThemeProvider>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
