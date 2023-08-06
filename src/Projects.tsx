@@ -9,6 +9,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Pagination from '@mui/material/Pagination';
+import Divider from "@mui/material/Divider";
 interface TabPanelProps {
     children?: React.ReactNode;
     index: number;
@@ -130,11 +131,16 @@ function Projects() {
                         <CustomTabPanel value={value} index={0}>
                             <Card sx={{ maxHeight: 500 }}>
                                 <CardContent sx={{ backgroundColor: "black"}}>
-                                    <Typography variant="h2" component="div" color={'white'}>
+                                    <Typography variant="h2" component="div" color={'white'} mb={3}>
                                         Amazon SDE Intern
                                     </Typography>
-                                    <Typography variant="body2" color={'white'}>
-                                       Add longer description
+                                    <Divider color={"white"}/>
+                                    <Typography variant="h6" color={'white'} mt={3}>
+                                        In the summer of 2023, I worked as a Software Development Engineer (SDE) intern at Amazon. I worked on the Data Center Automation team
+                                        building front end pages for auto generated tickets. The project would help with security
+                                        since the previous implementation used software that was deprecated. In the end I worked on two components that
+                                        interacts with a backend database, having me learn skills such as asynchronous programming, React rendering, and transfer of data between components.
+                                        I then used the experience to build this page!
                                     </Typography>
                                 </CardContent>
                             </Card>
@@ -142,11 +148,16 @@ function Projects() {
                         <CustomTabPanel value={value} index={1}>
                             <Card sx={{ maxHeight: 500 }}>
                                 <CardContent sx={{ backgroundColor: "black"}}>
-                                    <Typography variant="h2" component="div" color={'white'}>
+                                    <Typography variant="h2" component="div" color={'white'} mb={3}>
                                         Semesterly
                                     </Typography>
-                                    <Typography variant="body2" color={'white'}>
-                                        Add longer description
+                                    <Divider color={"white"}/>
+                                    <Typography variant="h6" color={'white'} mt={3}>
+                                        The second position was at Semester.ly Technologies,
+                                        a Hopkins started company to help students plan their classes for the semester.
+                                        I was a backend developer working with Django to support common class abbreviations to be added to the search.
+                                        In order to gauge what was used, we gathered user analytics through surveys and in person contacts.
+                                        From this new feature, users reported pleasure with the feature and had their schedules completed quicker.
                                     </Typography>
                                 </CardContent>
                             </Card>
@@ -154,11 +165,17 @@ function Projects() {
                         <CustomTabPanel value={value} index={2}>
                             <Card sx={{ maxHeight: 500 }}>
                                 <CardContent sx={{ backgroundColor: "black"}}>
-                                    <Typography variant="h2" component="div" color={'white'}>
+                                    <Typography variant="h2" component="div" color={'white'} mb={3}>
                                         JHU Institute of Assured Autonomy
                                     </Typography>
-                                    <Typography variant="body2" color={'white'}>
-                                        Add longer description
+                                    <Divider color={"white"}/>
+                                    <Typography variant="h6" color={'white'} mt={3}>
+                                        My first job was with the Johns Hopkins Institute of Assured Autonomy
+                                        as a security researcher exploring the use of Honeypots on inexpensive ground stations.
+                                        Ground stations are currently available through services like AWS where it’s paid per usage,
+                                        but this poses problems for smaller companies and Universities for research.
+                                        The honeypot was built using Python, and would use an authentication system between the ground station and satellite on initial connection.
+                                        The honeypot had a fake web server, logs, and users to attract hackers. The project didn’t finish in time to get results.
                                     </Typography>
                                 </CardContent>
                             </Card>

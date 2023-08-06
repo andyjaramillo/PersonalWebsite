@@ -8,7 +8,6 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import HomeIcon from "@mui/icons-material/Home";
 import * as React from "react";
 import Projects from "./Projects";
-import {useRef} from "react";
 import Resume from "./Resume";
 import Email from "./Email";
 import Footer from "./Footer";
@@ -24,7 +23,7 @@ function Home() {
                 <Grid item xs={5}>
                     <Typography variant="h2" gutterBottom mt={40} ml={10} color={'white'}>
                         Andreas Jaramillo
-                        <Button variant="outlined" size="large" style={{color:'white'}}>Portfolio</Button>
+                        <Button variant="outlined" size="large" disabled style={{color:'white'}}>Portfolio</Button>
                     </Typography>
                 </Grid>
                 <Grid item xs={5}>
