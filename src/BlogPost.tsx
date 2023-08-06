@@ -24,10 +24,10 @@ function BlogPost(props: BlogPostInterface) {
                 justifyContent="center"
                 alignItems="center"
                 minHeight="100vh"
-                mb={15}
+                mb={5}
             >
                 <Card sx={{ minWidth: 1000, minHeight: 300 }}>
-                    <CardContent sx={{ backgroundColor: "black"}}>
+                    <CardContent sx={{ backgroundColor: "black", minHeight: 250}}>
                         <Typography variant="h5" component="div" color={'white'}>
                             {title}
                         </Typography>

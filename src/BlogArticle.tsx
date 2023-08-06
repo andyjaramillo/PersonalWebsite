@@ -14,6 +14,8 @@ function BlogArticle() {
             .then((response) => {
                 setTitle(response.data.title)
                 setContent(response.data.content)
+            }).catch(e => {
+                console.error(e);
             })
     }
 

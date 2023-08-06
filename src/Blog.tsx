@@ -11,9 +11,13 @@ function Blog() {
     const [content, setContent] = useState('');
     const [blogArray, setBlogArray] = useState([]);
     async function getBlogPosts(){
-        await axios.get("/api/getBlogPosts")
+        await axios.get("/api/getPost")
             .then((response) => {
-                setBlogArray(response.data)
+              // console.log(response.data.rows)
+                setBlogArray(response.data.rows)
+            })
+            .catch(e => {
+                console.error(e);
             })
     }
 
@@ -23,25 +27,7 @@ function Blog() {
 
     return (
         <div>
-            <Stack spacing={2}>
-                <Grid container spacing={2} mt={30}>
-                    <Grid item xs={1}  ml={60}>
-                        <Typography variant="h6" gutterBottom color={"white"}>
-                           Title
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={2} style={{backgroundColor: "#FBFAF5"}}>
-                        <TextField id="outlined-basic" label="Outlined" variant="outlined"
-                            value={title} onChange={detail => setTitle(detail.target.value)}
-                        />
-                    </Grid>
-                </Grid>
-                    <TextareaAutosize
-                        value={content}
-                        onChange={detail => setContent(detail.target.value)}
-                        style={{backgroundColor: "#FBFAF5", maxWidth:800, marginLeft: 325, marginBottom: 10}}
-                        minRows={15}
-                    />
+            <Stack spacing={2} mt={20}>
                 {blogArray.length != 0 && blogArray.map((blog:any) => {
                     return <BlogPost title={blog.title} content={blog.content} />
                 })}
