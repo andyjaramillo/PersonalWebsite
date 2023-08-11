@@ -48,8 +48,8 @@ function Resume() {
                         </CardContent>
                         <CardActions>
                             <ButtonGroup variant="text" aria-label="text button group">
-                                <Button target="_blank" href={"https://drive.google.com/file/d/1YembLmref-ji4ZR99n_QPlObuFOSXeCy/view?usp=drive_link"}>More on it</Button>
-                                <Button target="_blank" href={"https://drive.google.com/file/d/1pA31tacMB10pyqp_QiVF18scL-hFbj5e/view?usp=drive_link"}>Download my CV!</Button>
+                                <Button target="_blank" href={"https://drive.google.com/file/d/1KFwDStnIIDmQ1MAUBgwikWkVsqgvcXFG/view?usp=sharing"}>More on it</Button>
+                                {/*<Button target="_blank" href={"https://drive.google.com/file/d/1pA31tacMB10pyqp_QiVF18scL-hFbj5e/view?usp=drive_link"}>Download my CV!</Button>*/}
                             </ButtonGroup>
 
                         </CardActions>

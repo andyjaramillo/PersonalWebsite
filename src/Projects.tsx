@@ -61,9 +61,9 @@ function Projects() {
                 <Grid container spacing={2}>
                     <Grid item xs={2} ml={20} sx={{ minWidth: 500 }}>
                             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                                <Tab label="Item One" {...a11yProps(0)} sx={{color: 'white'}}/>
-                                <Tab label="Item Two" {...a11yProps(1)} sx={{color: 'white'}}/>
-                                <Tab label="Item Three" {...a11yProps(2)} sx={{color: 'white'}}/>
+                                <Tab label="Amazon" {...a11yProps(0)} sx={{color: 'white'}}/>
+                                <Tab label="Semester.ly" {...a11yProps(1)} sx={{color: 'white'}}/>
+                                <Tab label="JHU IAA" {...a11yProps(2)} sx={{color: 'white'}}/>
                             </Tabs>
                             <CustomTabPanel value={value} index={0}>
                                 <Card >
@@ -83,7 +83,7 @@ function Projects() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small">More on it</Button>
+                                        {/*<Button size="small">More on it</Button>*/}
                                     </CardActions>
                                 </Card>
                             </CustomTabPanel>
@@ -105,7 +105,7 @@ function Projects() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small">More on it</Button>
+                                        {/*<Button size="small">More on it</Button>*/}
                                     </CardActions>
                                 </Card>
                             </CustomTabPanel>
@@ -121,7 +121,7 @@ function Projects() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small">More on it</Button>
+                                        {/*<Button size="small">More on it</Button>*/}
                                     </CardActions>
                                 </Card>
                             </CustomTabPanel>

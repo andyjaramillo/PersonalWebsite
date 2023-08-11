@@ -28,12 +28,12 @@ function NavBar(){
                             <Grid item xs={4}>
                                 <Button style={{'color':'white'}} href={'/about'}><b>About</b></Button>
                             </Grid>
-                            <Grid item xs={4}>
-                                <Button style={{'color':'white'}} href={'/blog'}><b>Blog</b></Button>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Button style={{'color':'white'}}><b>Game</b></Button>
-                            </Grid>
+                            {/*<Grid item xs={4}>*/}
+                            {/*    <Button style={{'color':'white'}} href={'/blog'}><b>Blog</b></Button>*/}
+                            {/*</Grid>*/}
+                            {/*<Grid item xs={4}>*/}
+                            {/*    <Button style={{'color':'white'}}><b>Game</b></Button>*/}
+                            {/*</Grid>*/}
                         </Grid>
                     </Box>
                 </Toolbar>
