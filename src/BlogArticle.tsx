@@ -10,7 +10,7 @@ function BlogArticle() {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     async function getBlogArticle() {
-        await axios.get('/api/getPost/'+id.pk)
+        await axios.get('/api/getPost/', {params: id.pk})
             .then((response) => {
                 setTitle(response.data.title)
                 setContent(response.data.content)
@@ -26,13 +26,13 @@ function BlogArticle() {
 
     return (
         <div>
-            <Typography variant="h1" gutterBottom>
+            <Typography variant="h1" gutterBottom color={'white'}>
                 {title}
             </Typography>
 
             <Divider />
 
-            <Typography variant="body1" gutterBottom>
+            <Typography variant="body1" gutterBottom color={'white'}>
                 {content}
             </Typography>
         </div>
