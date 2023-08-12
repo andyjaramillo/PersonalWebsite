@@ -11,12 +11,15 @@ import * as React from "react";
 interface BlogPostInterface{
     title: string,
     content: string,
+    User_id: number,
 }
 
 
 function BlogPost(props: BlogPostInterface) {
 
-    const {title, content} = props;
+    const {title, content, User_id} = props;
+
+
     return (
         <div>
             <Box
@@ -36,7 +39,7 @@ function BlogPost(props: BlogPostInterface) {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button>Learn more</Button>
+                        <Button  href={`/blog/<int>:pk`}>Learn more</Button>
                     </CardActions>
                 </Card>
             </Box>
