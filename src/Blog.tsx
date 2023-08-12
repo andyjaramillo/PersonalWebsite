@@ -26,7 +26,7 @@ function Blog() {
         <div>
             <Stack spacing={2} mt={10}>
                 {blogArray.length != 0 && blogArray.map((blog:any) => {
-                    return <BlogPost title={blog.title} content={blog.content} id={blog.User_id} />
+                    return <BlogPost title={blog.title} content={blog.content} id={blog.id} />
                 })}
             </Stack>
         </div>

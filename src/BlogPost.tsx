@@ -11,7 +11,7 @@ import * as React from "react";
 interface BlogPostInterface{
     title: string,
     content: string,
-    id: number,
+    id: any,
 }
 
 
