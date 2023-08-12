@@ -7,7 +7,7 @@ import {useState} from "react";
 import Button from "@mui/material/Button";
 
 
-function Add_Post() {
+function AddPost() {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
 
@@ -45,4 +45,4 @@ function Add_Post() {
         </div>
     )
 }
-export default Add_Post
+export default AddPost
