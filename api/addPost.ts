@@ -8,10 +8,12 @@ export default async function handler(
     try {
         const title = request.query.title as string;
         const content = request.query.content as string;
+        console.log(title, content);
         const count = await sql`SELECT * FROM blog_post;`;
         if (!title || !content) throw new Error('Pet and owner names required');
-        await sql`INSERT INTO blog_post (title, content, Date_posted, User_Id) VALUES (${title}, ${content}, ${Date().toLocaleString()}, ${count.rowCount + 1});`;
+        await sql`INSERT INTO blog_post(title, content, Date_posted, User_Id) VALUES (${title}, ${content}, ${Date().toLocaleString()}, ${count.rowCount + 1});`;
     } catch (error) {
+
         return response.status(500).json({ error });
     }
 
