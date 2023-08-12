@@ -1,6 +1,5 @@
 import * as React from 'react';
-import axios from "axios/index";
-import BlogPost from "./BlogPost";
+import axios from "axios";
 import Stack from "@mui/material/Stack";
 import {TextField} from "@mui/material";
 import {useState} from "react";
