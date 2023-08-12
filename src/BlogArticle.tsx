@@ -12,6 +12,7 @@ function BlogArticle() {
     async function getBlogArticle() {
         await axios.get('/api/getSpecificPost/', {params: {id: id.pk}})
             .then((response) => {
+                console.log(typeof id.pk)
                 setTitle(response.data.rows.at(id.pk).title)
                 setContent(response.data.rows.at(id.pk).content)
             }).catch(e => {
