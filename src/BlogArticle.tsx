@@ -26,15 +26,15 @@ function BlogArticle() {
 
     return (
         <div>
-            <Typography variant="h1" gutterBottom color={'white'}>
-                {title}
-            </Typography>
+            {/*<Typography variant="h1" gutterBottom color={'white'}>*/}
+            {/*    {title}*/}
+            {/*</Typography>*/}
 
-            <Divider />
+            {/*<Divider />*/}
 
-            <Typography variant="body1" gutterBottom color={'white'}>
-                {content}
-            </Typography>
+            {/*<Typography variant="body1" gutterBottom color={'white'}>*/}
+            {/*    {content}*/}
+            {/*</Typography>*/}
         </div>
     )
 }
