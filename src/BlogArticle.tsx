@@ -22,7 +22,7 @@ function BlogArticle() {
 
     useEffect(() => {
       getBlogArticle();
-    },)
+    }, [])
 
     return (
         <div>
