@@ -16,7 +16,7 @@ function AddPost() {
     const [content, setContent] = useState('');
 
     async function addBlogPosts(){
-        await axios.post("/api/addPost", {title: title, content: content})
+        await axios.post("/api/addPost", {title, content})
             .then((response) => {
                 window.location.href = '/blog';
             })
