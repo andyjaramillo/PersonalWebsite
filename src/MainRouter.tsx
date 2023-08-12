@@ -14,7 +14,7 @@ function MainRouter() {
             <Route path={'about/'} element={<About/>}/>
             <Route path={'blog/'} element={<Blog/>}/>
             <Route path={'blog/add_post'} element={<AddPost/>}/>
-            <Route path={'blog/<int>:pk'} element={<BlogArticle/>}/>
+            <Route path={'blog/:pk'} element={<BlogArticle/>}/>
         </Routes>
     )
 }
