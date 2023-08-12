@@ -11,13 +11,13 @@ import * as React from "react";
 interface BlogPostInterface{
     title: string,
     content: string,
-    User_id: number,
+    id: number,
 }
 
 
 function BlogPost(props: BlogPostInterface) {
 
-    const {title, content, User_id} = props;
+    const {title, content, id} = props;
 
 
     return (
