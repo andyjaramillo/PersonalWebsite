@@ -39,7 +39,7 @@ function BlogPost(props: BlogPostInterface) {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button  href={`/blog/<int>:pk`}>Learn more</Button>
+                        <Button  href={`/blog/${id}`}>Learn more</Button>
                     </CardActions>
                 </Card>
             </Box>
