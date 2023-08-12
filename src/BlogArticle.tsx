@@ -10,8 +10,7 @@ function BlogArticle() {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     async function getBlogArticle() {
-        console.log(id);
-        await axios.get('/api/getPost/'+id)
+        await axios.get('/api/getPost/'+id.pk)
             .then((response) => {
                 setTitle(response.data.title)
                 setContent(response.data.content)
