@@ -6,7 +6,7 @@ export default async function handler(
     response: VercelResponse,
 ) {
     try {
-        const result = await sql`SELECT * FROM Blog_post;`;
+        const result = await sql`SELECT * FROM blog_post;`;
         const rows = result.rows
         return response.status(200).json({ rows });
     } catch (error) {
